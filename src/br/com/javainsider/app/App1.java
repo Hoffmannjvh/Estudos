@@ -9,7 +9,7 @@ public class App1 {
         Account a1 = new Account();
 
         a1.accountNumber = "1234-5";
-        a1.accountOwner = "Joao Vitor";
+        a1.accountOwner = "Joao Vitor Hoffmann";
         a1.balance = 100.00;
 
 
