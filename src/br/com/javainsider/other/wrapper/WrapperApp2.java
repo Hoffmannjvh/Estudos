@@ -1,4 +1,4 @@
-package br.com.javainsider.wrapper;
+package br.com.javainsider.other.wrapper;
 
 public class WrapperApp2 {
 
