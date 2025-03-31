@@ -1,6 +1,6 @@
 package br.com.javainsider.app;
 
-import br.com.javainsider.other.Strings.StringManipulatorImpl;
+import br.com.javainsider.other.strings.StringManipulatorImpl;
 
 public class App7 {
 

@@ -1,8 +1,8 @@
 package br.com.javainsider.app;
 
-import br.com.javainsider.other.Generator.Generator;
-import br.com.javainsider.other.Generator.Person;
-import br.com.javainsider.other.Generator.SequenceGenerator;
+import br.com.javainsider.other.generator.Generator;
+import br.com.javainsider.other.generator.Person;
+import br.com.javainsider.other.generator.SequenceGenerator;
 
 
 public class App9 {

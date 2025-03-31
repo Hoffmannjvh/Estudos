@@ -1,7 +1,7 @@
 package br.com.javainsider.app;
 
-import br.com.javainsider.other.Pets.Cat;
-import br.com.javainsider.other.Pets.Dog;
+import br.com.javainsider.other.pets.Cat;
+import br.com.javainsider.other.pets.Dog;
 
 public class App8 {
 
