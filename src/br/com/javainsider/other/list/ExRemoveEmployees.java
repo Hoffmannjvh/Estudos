@@ -2,7 +2,6 @@ package br.com.javainsider.other.list;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
 
 import static br.com.javainsider.other.list.Employee.Status.ACTIVE;
