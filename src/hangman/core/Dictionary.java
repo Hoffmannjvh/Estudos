@@ -1,5 +1,7 @@
 package hangman.core;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Files;
 
@@ -13,12 +15,21 @@ public class Dictionary {
     private final List<String> words;
     private final Random random = new Random();
 
-   public Dictionary() throws Exception {
+   public Dictionary() {
        URL url = getClass().getResource(FILE_PATH);
-       words = Files.readAllLines(Paths.get(url.toURI()));
+
+       if (url == null) {
+           throw new RuntimeException("File not found " + FILE_PATH);
+       }
+        try {
+            words = Files.readAllLines(Paths.get(url.toURI()));
+        } catch (URISyntaxException | IOException e) {
+            throw new RuntimeException("Error loading dictionary", e);
+        }
+
    }
 
-   public String newtWord() {
+   public String nextWord() {
        int randomIndex = random.nextInt(words.size());
        return words.get(randomIndex);
    }
