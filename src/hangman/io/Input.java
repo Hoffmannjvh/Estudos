@@ -14,9 +14,7 @@ public final class Input {
     private Input() {}
 
     public static List<String> readLinesFromFile(String path) {
-
         URL url = Input.class.getResource(path);
-
         if (url == null) {
             throw new RuntimeException("File not found " + path);
         }
