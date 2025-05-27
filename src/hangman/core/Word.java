@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Word {
 
-    private static final char HIDDEN_CHAR = '_';
+    private static final char HIDDEN_CHAR = '-';
 
     private final char [] letters;
     private final char [] hiddenLetters;

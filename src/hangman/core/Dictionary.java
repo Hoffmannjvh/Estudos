@@ -16,9 +16,12 @@ public class Dictionary {
 
    }
 
-   public String nextWord() {
-       int randomIndex = random.nextInt(words.size());
-       return words.get(randomIndex);
+   public Word nextWord() {
+       return new Word(
+               words.get(
+                       random.nextInt(words.size())
+               )
+       );
    }
 
    public static Dictionary instance() {
