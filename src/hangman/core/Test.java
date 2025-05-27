@@ -2,14 +2,9 @@ package hangman.core;
 
 public class Test {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
-        Word w =  new Word("java");
-
-        System.out.println(w);
-
-        w.reveal('a');
-        System.out.println(w);
+        Dictionary dictionary = new Dictionary();
 
     }
 }
