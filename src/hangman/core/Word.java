@@ -1,7 +1,5 @@
 package hangman.core;
 
-import java.util.Arrays;
-
 public class Word {
 
     private static final char HIDDEN_CHAR = '-';

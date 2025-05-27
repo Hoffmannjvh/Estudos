@@ -6,10 +6,14 @@ import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Objects;
+import java.util.Scanner;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 public final class Input {
+
+    private static final Scanner SCANNER = new Scanner(System.in);
 
     private Input() {}
 
@@ -24,7 +28,14 @@ public final class Input {
         } catch (URISyntaxException | IOException e) {
             throw new RuntimeException("Error loading dictionary", e);
         }
+    }
 
+    public static String readFromKeyboard(String message) {
+        if (!Objects.isNull(message)) {
+            Output.writeToConsole(message + ": ", false);
+        }
+
+        return SCANNER.nextLine();
     }
 
 }
