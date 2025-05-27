@@ -8,5 +8,8 @@ public class Test {
 
         System.out.println(w);
 
+        w.reveal('a');
+        System.out.println(w);
+
     }
 }

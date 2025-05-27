@@ -21,4 +21,17 @@ public class Word {
     public String toString() {
         return String.valueOf(hiddenLetters);
     }
+
+    public boolean reveal(char letter) {
+
+        boolean replaced = false;
+
+        for (int i = 0; i < letters.length; i++) {
+            if (letters[i] == letter) {
+                hiddenLetters[i] = letter;
+                replaced = true;
+            }
+        }
+        return replaced;
+    }
 }
